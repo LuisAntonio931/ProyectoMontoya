@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gris">#0D174188</color>
+    <color name="azul">#3F87E9</color>
+    <color name="azu">#54ADF8</color>
+    <color name="verde">#3DDC84</color>
+    <color name="griss">#CCCCCC</color>
+    <color name="dark_gray">#525252</color>
+    <color name="gray">#828282</color>
+    <color name="blue">#2196F3</color>
+    <color name="home">#363737</color>
+
+
+</resources>

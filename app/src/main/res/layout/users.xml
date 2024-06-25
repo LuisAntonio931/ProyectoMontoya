@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context="">
+
+    <!-- Barra superior -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#333333"
+        android:padding="10dp">
+
+        <!-- Hora -->
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:43 p.m."
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <!-- Iconos de notificaciones -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal">
+
+            <!-- Icono de WhatsApp -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/campeon" />
+
+            <!-- Icono de Mensajes -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/campeon" />
+
+            <!-- Icono de Notificación -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/campeon" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Sección de perfil -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_below="@id/timeTextView">
+
+        <!-- Nombre del perfil -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jose Gonzalez"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Detalles de seguidores -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="963 seguidores • 193 seguidos"
+            android:textColor="#888888"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Foto de perfil y demás iconos -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Foto de perfil -->
+            <ImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/campeon"
+                android:background="@drawable/campeon" />
+
+            <!-- Icono de Cámara -->
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignBottom="@id/profileImageView"
+                android:layout_alignEnd="@id/profileImageView"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/campeon"
+                android:background="@drawable/campeon" />
+        </RelativeLayout>
+
+        <!-- Historias de amigos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <!-- Historias (usar ImageView para las fotos de los amigos) -->
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/campeon"
+                android:background="@drawable/campeon" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/campeon"
+                android:background="@drawable/campeon" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/campeon"
+                android:background="@drawable/campeon" />
+
+            <!-- Agregar más historias según sea necesario -->
+        </LinearLayout>
+
+        <!-- Botones de Agregar historia y Anunciarte -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp">
+
+            <!-- Botón Agregar a historia -->
+            <Button
+                android:id="@+id/addStoryButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="+ Agregar a historia"
+                android:background="@drawable/campeon"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp" />
+
+            <!-- Botón Anunciarte -->
+            <Button
+                android:id="@+id/advertiseButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Anunciarte"
+                android:background="@drawable/campeon"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Navegación inferior -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#333333"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <!-- Botones de navegación -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Publicaciones"
+            android:textColor="#FFFFFF"
+            android:background="?attr/selectableItemBackground" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Información"
+            android:textColor="#888888"
+            android:background="?attr/selectableItemBackground" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Más"
+            android:textColor="#888888"
+            android:background="?attr/selectableItemBackground" />
+    </LinearLayout>
+</RelativeLayout>
